@@ -25,10 +25,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body {
-  position: relative;
-} */
-
 .btn {
   width: 16rem;
   height: 2.6rem;
@@ -103,6 +99,7 @@ img:hover {
   transform: scale(1.05);
 }
 
+/* Animations */
 @keyframes fadeIn {
   to {
     opacity: 1;

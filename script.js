@@ -9,17 +9,14 @@ const purchaseBtn = document.getElementById("purchaseBtn");
 const modal = document.getElementById("customModal");
 const closeModal = document.getElementById("closeModal");
 
-// Show modal when button is clicked
 purchaseBtn.addEventListener("click", () => {
   modal.style.display = "flex";
 });
 
-// Close modal when close button is clicked
 closeModal.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// Close modal if user clicks outside modal content
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
@@ -28,6 +25,7 @@ window.addEventListener("click", (e) => {
 
 // Bu alert yordamida qanday qilib xabar chiqarish mumkinligi
 // bu ishlashi uchun button ga onclick="showMessage()" yozilishi kerak bo'ladi
+// User-friendly bo'lgani uchun modal ni tanladim
 
 // function showMessage() {
 //   alert("Thank you for your purchase!");
